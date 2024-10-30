@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maint"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/fondo3"
+    android:gravity="center|top">
+
+    <TextView
+        android:id="@+id/tituloApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/app_name"
+        android:textColor="@color/marron"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagenAgua"
+        android:layout_width="112dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/termometro" />
+
+    <TextView
+        android:id="@+id/tituloTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detalles_de_temperatura"
+        android:textColor="@color/marron"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/temperaturaActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperatura_actual_del_agua_15_c"
+        android:textColor="@color/azul"
+        android:textSize="22sp"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:id="@+id/temperaturaRecomendada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperatura_recomendada_20_c"
+        android:textColor="@color/verde"
+        android:textSize="22sp"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:id="@+id/temperaturaAmbiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperatura_del_ambiente_22_c"
+        android:textColor="@color/rojo"
+        android:textSize="22sp"
+        android:layout_marginBottom="120dp" />
+
+    <Button
+        android:id="@+id/btn_volvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volver"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/marron" />
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainra"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center|top"
+    android:background="@drawable/fondo3">
+
+    <TextView
+        android:id="@+id/tituloApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/morado"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagenAgua"
+        android:layout_width="112dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/agua" />
+
+    <TextView
+        android:id="@+id/tituloRellenarAgua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Rellenar Agua"
+        android:textColor="@color/morado"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvcantidadAgua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Cantidad actual: 50 mL"
+        android:textColor="@color/morado"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona la cantidad a rellenar:"
+        android:textColor="@color/morado"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnAguaPoco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Poco (30 mL)"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/morado"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnAguaMedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medio (50 mL)"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/morado"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnAguaAlto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alto (100 mL)"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/morado" />
+
+        <Button
+            android:id="@+id/btn_volvera"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:layout_width="140dp"
+            android:layout_height="50sp"
+            android:text="Volver"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/morado" />
+    </LinearLayout>
+</LinearLayout>

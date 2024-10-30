@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainf"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/fondo3"
+    android:gravity="center|top">
+
+    <TextView
+        android:id="@+id/tituloApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130dp"
+        android:text="@string/app_name"
+        android:textColor="@color/marron"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/estados_generales"
+        android:textColor="@color/marron"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comida"
+                android:textSize="20sp"
+                android:textColor="@color/marron"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/circuloAlimento"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/comida" />
+
+            <TextView
+                android:id="@+id/tvporcentajeAlimento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70 g"
+                android:textSize="22sp"
+                android:textColor="@color/marron"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_rellenar_comida"
+                android:layout_width="104dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Rellenar comida"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/cafe" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/temperatura"
+                android:textColor="@color/marron"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iTemperatura"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/termometro" />
+
+            <TextView
+                android:id="@+id/porcentajeTemperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 °C"
+                android:textColor="@color/marron"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnDetalles"
+                android:layout_width="104dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/cafe"
+                android:text="@string/detalles"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top|center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agua"
+                android:textSize="20sp"
+                android:textColor="@color/marron"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/circuloAgua"
+                android:layout_width="100dp"
+                android:layout_height="98dp"
+                android:src="@drawable/agua" />
+
+            <TextView
+                android:id="@+id/tvporcentajeAgua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_50_ml"
+                android:textSize="22sp"
+                android:textColor="@color/marron"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_rellenar_Agua"
+                android:layout_width="104dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/rellenar_agua"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/cafe" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="80dp"
+        android:text="Salir"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/cafe"
+        android:padding="10dp" />
+
+</LinearLayout>
+

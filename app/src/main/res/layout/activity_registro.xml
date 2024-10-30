@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/piel"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/mano" />
+
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FoodGauge"
+        android:textColor="@color/cafe"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Nombre"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/etusuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Usuario"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/etcontrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Contraseña"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/btnregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:backgroundTint="@color/cafe"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvtienecuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:text="¿Ya tiene una cuenta?"
+        android:textColor="@color/cafe" />
+
+    <TextView
+        android:id="@+id/tvbiniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:textSize="15sp"
+        android:clickable="true"
+        android:text="Iniciar sesión"
+        android:textColor="@color/marron" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/wave"/>
+
+
+
+</LinearLayout>

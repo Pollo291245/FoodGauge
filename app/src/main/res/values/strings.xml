@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FoodGauge</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="foodgauge">FoodGauge</string>
+    <string name="detalles_de_temperatura">Detalles de Temperatura</string>
+    <string name="temperatura_actual_del_agua_15_c">Temperatura actual del agua: 15 °C</string>
+    <string name="temperatura_recomendada_20_c">Temperatura recomendada: 20 °C</string>
+    <string name="temperatura_del_ambiente_22_c">Temperatura del ambiente: 22 °C</string>
+    <string name="volver">volver</string>
+    <string name="estados_generales">Estados generales</string>
+    <string name="rellenar_comida">Rellenar Comida</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="detalles">Detalles</string>
+    <string name="agua">Agua</string>
+    <string name="_50_ml">50 mL</string>
+    <string name="rellenar_agua">Rellenar Agua</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>
