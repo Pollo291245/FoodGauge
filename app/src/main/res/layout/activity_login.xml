@@ -30,11 +30,11 @@
 
 
     <EditText
-        android:id="@+id/etusuariol"
+        android:id="@+id/etemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Usuario"
+        android:hint="Correo"
         android:padding="12dp"
         android:background="@drawable/edittext_background"
         android:inputType="text" />
@@ -74,7 +74,7 @@
         android:id="@+id/tvbregistrarse"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:clickable="true"
         android:text="Registrarse"
         android:textColor="@color/marron" />

@@ -11,53 +11,69 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.pfoodgauge.databinding.ActivityLoginBinding
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class login : AppCompatActivity() {
+
+    private lateinit var binding: ActivityLoginBinding
+    private lateinit var auth: FirebaseAuth
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_login)
+
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mainl)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val sharedPreferencesn = getSharedPreferences("pnombre", Context.MODE_PRIVATE)
-        val pnombre = sharedPreferencesn.getString("nombreg", "")
+        auth= Firebase.auth
 
-        val sharedPreferencesu = getSharedPreferences("pusuario", Context.MODE_PRIVATE)
-        val pusuario = sharedPreferencesu.getString("usuariog", "")
+        binding.btnLogin.setOnClickListener {
+            val email = binding.etemail.text.toString()
+            val contra= binding.etcontrasenal.text.toString()
 
-        val sharedPreferencesc = getSharedPreferences("pcontra", Context.MODE_PRIVATE)
-        val pcontra = sharedPreferencesc.getString("contrag", "")
-
-        val login: Button = findViewById(R.id.btn_login)
-        login.setOnClickListener {
-            val usuario = findViewById<EditText>(R.id.etusuariol).text.toString()
-            val contrasena= findViewById<EditText>(R.id.etcontrasenal).text.toString()
-
-            if (usuario == pusuario && contrasena == pcontra){
-                if (usuario.isNotEmpty() && contrasena.isNotEmpty()){
-                    val intent = Intent(this, funcionalidades::class.java)
-                    Toast.makeText(this, "Bienvenido $pnombre", Toast.LENGTH_SHORT).show()
-                    startActivity(intent)
-                    finish()
-            }}
-            else{
-                Toast.makeText(this, "usuario o contraseña incorrecto", Toast.LENGTH_SHORT).show()
+            if (email.isEmpty()){
+                binding.etemail.error= "Por favor ingrese su correo"
+                return@setOnClickListener
+            }
+            if (contra.isEmpty()){
+                binding.etcontrasenal.error = "Por favor ingrese su contraseña"
             }
 
-
-
-            val cambiarPantallar: TextView = findViewById(R.id.tvbregistrarse)
-            cambiarPantallar.setOnClickListener { val intent = Intent(this, registro::class.java)
-                startActivity(intent)
-
-            }
-
-
+            signIn(email,contra)
         }
 
+        binding.tvbregistrarse.setOnClickListener {
+            val intent= Intent(this, registro::class.java)
+            startActivity(intent)
+        }
+
+    }
+    private fun signIn(email: String, contra: String){
+        auth.signInWithEmailAndPassword(email, contra)
+            .addOnCompleteListener {
+                if (it.isSuccessful){
+                    Toast.makeText(this, "Inicio de sesion exitoso", Toast.LENGTH_SHORT).show()
+
+                    try {
+                        val intent = Intent(this, funcionalidades::class.java)
+                        startActivity(intent)
+                    }catch (e: Exception){
+                        Toast.makeText(this,e.toString(),Toast.LENGTH_SHORT).show()
+                    }
+
+                }else{
+                    Toast.makeText(this, "error al iniciar sesion", Toast.LENGTH_SHORT).show()
+                }
+            }
     }
 }

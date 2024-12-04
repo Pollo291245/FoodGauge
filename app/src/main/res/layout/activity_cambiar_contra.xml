@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cambiarC"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/piel"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:id="@+id/imglogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/mano" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cambiar_contrase_a"
+        android:textColor="@color/cafe"
+        android:textSize="24sp"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/etContrasenaActual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contrase_a_actual"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/etNuevaContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nueva_contrase_a"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/etConfirmarNuevaContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirmar_nueva_contrase_a"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btnCambiarContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cambiar_contrase_a"
+        android:backgroundTint="@color/cafe"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="140dp"
+        android:layout_height="50sp"
+        android:text="volver"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/cafe" />
+</LinearLayout>

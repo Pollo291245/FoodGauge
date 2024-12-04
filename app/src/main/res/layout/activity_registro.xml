@@ -39,11 +39,11 @@
 
 
     <EditText
-        android:id="@+id/etusuario"
+        android:id="@+id/etemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Usuario"
+        android:hint="Correo"
         android:padding="12dp"
         android:background="@drawable/edittext_background"
         android:inputType="text" />
@@ -55,6 +55,16 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:hint="Contraseña"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etconfcontrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Confirme su Contraseña"
         android:padding="12dp"
         android:background="@drawable/edittext_background"
         android:inputType="textPassword" />

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_mascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvNombreMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la Mascota"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvEspecieMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Especie de la Mascota"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvEdadMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edad de la Mascota"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

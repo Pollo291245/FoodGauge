@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "77624672436",
+    "project_id": "foodgauge-4e433",
+    "storage_bucket": "foodgauge-4e433.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77624672436:android:cef6f7ba4d86f1432457e1",
+        "android_client_info": {
+          "package_name": "com.example.pfoodgauge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw-JejmhAQG26XXki0ovBjJV_Cu5-Jad8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

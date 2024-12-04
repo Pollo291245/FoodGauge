@@ -13,6 +13,29 @@
         android:theme="@style/Theme.PFoodGauge"
         tools:targetApi="31">
         <activity
+            android:name=".agregarMascota"
+            android:exported="false" />
+        <activity
+            android:name=".verMascota"
+            android:exported="false" />
+        <activity
+            android:name=".verMascotas"
+            android:exported="false" />
+        <activity
+            android:name=".agregar_mascota"
+            android:exported="false" />
+        <activity
+            android:name=".cambiarContra"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/Theme.PFoodGauge.NoActionBar" />
+        <activity
+            android:name=".CambiarContra"
+            android:exported="false" />
+        <activity
             android:name=".temperatura"
             android:exported="false" />
         <activity
