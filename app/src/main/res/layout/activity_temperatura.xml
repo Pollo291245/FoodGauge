@@ -33,14 +33,13 @@
         android:textColor="@color/marron"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_marginBottom="20dp"
-        />
+        android:layout_marginBottom="20dp" />
 
     <TextView
-        android:id="@+id/temperaturaActual"
+        android:id="@+id/tvtemperaturaActual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/temperatura_actual_del_agua_15_c"
+        android:text="calculando temperatura actual"
         android:textColor="@color/azul"
         android:textSize="22sp"
         android:layout_marginBottom="40dp" />
@@ -51,15 +50,6 @@
         android:layout_height="wrap_content"
         android:text="@string/temperatura_recomendada_20_c"
         android:textColor="@color/verde"
-        android:textSize="22sp"
-        android:layout_marginBottom="40dp" />
-
-    <TextView
-        android:id="@+id/temperaturaAmbiente"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/temperatura_del_ambiente_22_c"
-        android:textColor="@color/rojo"
         android:textSize="22sp"
         android:layout_marginBottom="120dp" />
 
