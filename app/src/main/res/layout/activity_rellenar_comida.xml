@@ -87,7 +87,7 @@
             android:backgroundTint="@color/marron" />
 
         <Button
-            android:id="@+id/btnvolverc"
+            android:id="@+id/btn_volverc"
             android:layout_marginTop="80dp"
             android:layout_gravity="center"
             android:layout_width="140dp"
