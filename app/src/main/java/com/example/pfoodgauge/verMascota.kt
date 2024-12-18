@@ -1,6 +1,7 @@
 package com.example.pfoodgauge
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -45,22 +46,29 @@ class verMascota : AppCompatActivity() {
     }
 
     private fun getMascotas() {
-        database= FirebaseDatabase.getInstance().getReference("Mascotas")
+        database = FirebaseDatabase.getInstance().getReference("Mascotas")
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
+                mascotasList.clear()
                 if (snapshot.exists()) {
                     for (mascotaSnapshot in snapshot.children) {
-                        val mascota = mascotaSnapshot.getValue(mascota::class.java)
-                        mascotasList.add(mascota!!)
+                        try {
+                            val mascota = mascotaSnapshot.getValue(mascota::class.java)
+                            mascota?.let {
+                                mascotasList.add(it)
+                            }
+                        } catch (e: Exception) {
+                            Log.e("Firebase", "Error converting mascota", e)
+                        }
                     }
                     adaptermascota = AdapterMascota(mascotasList)
                     mascotaRecyclerView.adapter = adaptermascota
                 }
             }
+
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+                Log.e("Firebase", "Database error: ${error.message}")
             }
         })
-
     }
 }

@@ -87,7 +87,7 @@
             android:backgroundTint="@color/morado" />
 
         <Button
-            android:id="@+id/btn_volvera"
+            android:id="@+id/btnvolvera"
             android:layout_marginTop="80dp"
             android:layout_gravity="center"
             android:layout_width="140dp"
